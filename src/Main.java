@@ -32,33 +32,77 @@ public class Main {
 
         System.out.println("-- 3 task --");
 
-        int currentFloor = 9;
-        String direction = "До низу";
+        int currentFloor = 2;
+        String direction = "До гори";
 
-        if(currentFloor < 1 || currentFloor > 9){
-            System.out.println("Невірне введення поверху!");
-            } else {
-                while (currentFloor <= 9 && currentFloor >= 1) {
-                    if (direction == "До низу") {
-                        if (currentFloor == 2) {
-                            currentFloor = 1;
-                            System.out.println("Ліфт доставлений на 1-й поверх, замість 2-го");
-                        } else {
-                            System.out.println("Ви спустились на " + currentFloor + " поверх");
-                            currentFloor--;
-                        }
-                    } else if (direction == "До гори") {
-                        if (currentFloor == 1) {
-                        System.out.println("Ліфт піднявся з 1-го поверха");
-                        currentFloor = 3;
-                        System.out.println("Ліфт доставлений на 3-й поверх, замість 2-го");
-                        } else {
-                        System.out.println("Ви піднялись на " + currentFloor + " поверх");
-                        currentFloor++;
-                    }
-                }
+        if(currentFloor < 1 || currentFloor > 9) {
+            System.out.println("Невірний поверх!");
+        } else {
+            if(currentFloor == 1 && direction == "До гори"){
+                System.out.println("Ви піднялись на 1 поверх");
+            } else if (currentFloor == 2 && direction == "До гори"){
+                System.out.println("Ви піднялися на 3 поверх");
+            } else if (currentFloor == 3 && direction == "До гори"){
+                System.out.println("Ви піднялися на 3 поверх");
+            } else if (currentFloor == 4 && direction == "До гори"){
+                System.out.println("Ви піднялися на 4 поверх");
+            } else if (currentFloor == 5 && direction == "До гори"){
+                System.out.println("Ви піднялися на 5 поверх");
+            } else if (currentFloor == 6 && direction == "До гори"){
+                System.out.println("Ви піднялися на 6 поверх");
+            } else if (currentFloor == 7 && direction == "До гори"){
+                System.out.println("Ви піднялися на 7 поверх");
+            } else if (currentFloor == 8 && direction == "До гори"){
+                System.out.println("Ви піднялися на 8 поверх");
+            } else if (currentFloor == 9 && direction == "До гори"){
+                System.out.println("Ви піднялися на 9 поверх");
+            }
+
+            if(currentFloor == 1 && direction == "До низу"){
+                System.out.println("Ви спустилися на 1 поверх");
+            } else if (currentFloor == 2 && direction == "До низу"){
+                System.out.println("Ви спустилися на 1 поверх");
+            } else if (currentFloor == 3 && direction == "До низу"){
+                System.out.println("Ви спустилися на 3 поверх");
+            } else if (currentFloor == 4 && direction == "До низу"){
+                System.out.println("Ви спустилися на 4 поверх");
+            } else if (currentFloor == 5 && direction == "До низу"){
+                System.out.println("Ви спустилися на 5 поверх");
+            } else if (currentFloor == 6 && direction == "До низу"){
+                System.out.println("Ви спустилися на 6 поверх");
+            } else if (currentFloor == 7 && direction == "До низу"){
+                System.out.println("Ви спустилися на 7 поверх");
+            } else if (currentFloor == 8 && direction == "До низу"){
+                System.out.println("Ви спустилися на 8 поверх");
+            } else if (currentFloor == 9 && direction == "До низу"){
+                System.out.println("Ви спустилися на 9 поверх");
             }
         }
+//
+//        if(currentFloor < 1 || currentFloor > 9){
+//            System.out.println("Невірне введення поверху!");
+//            } else {
+//                while (currentFloor <= 9 && currentFloor >= 1) {
+//                    if (direction == "До низу") {
+//                        if (currentFloor == 2) {
+//                            currentFloor = 1;
+//                            System.out.println("Ліфт доставлений на 1-й поверх, замість 2-го");
+//                        } else {
+//                            System.out.println("Ви спустились на " + currentFloor + " поверх");
+//                            currentFloor--;
+//                        }
+//                    } else if (direction == "До гори") {
+//                        if (currentFloor == 1) {
+//                        System.out.println("Ліфт піднявся з 1-го поверха");
+//                        currentFloor = 3;
+//                        System.out.println("Ліфт доставлений на 3-й поверх, замість 2-го");
+//                        } else {
+//                        System.out.println("Ви піднялись на " + currentFloor + " поверх");
+//                        currentFloor++;
+//                    }
+//                }
+//            }
+//        }
 
         System.out.println("-- 4 task --");
 
